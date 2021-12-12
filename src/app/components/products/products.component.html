@@ -1,0 +1,24 @@
+<div class="card mt-3">
+    <div class="card-header">
+        Prekės
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Prekės ID</th>
+                    <th>Prekės pavadinimas</th>
+                    <th>Prekės kaina</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products">
+
+                    <td>{{ product.id }}</td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.price }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

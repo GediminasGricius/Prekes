@@ -1,0 +1,32 @@
+<div class="card mt-3">
+    <div class="card-header">
+        Užsakymai
+    </div>
+    <div class="card-body">
+
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Vardas</th>
+                    <th>Pavarde</th>
+                    <th>Preke</th>
+                    <th>Kaina</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let order of orders">
+                    <td>{{ order.id }}</td>
+                    <td>{{ order.name }}</td>
+                    <td>{{ order.surname }}</td>
+                    <td>{{ order.product.name }}</td>
+                    <td>{{ order.product.price }}</td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
